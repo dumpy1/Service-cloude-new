@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    color: #404040;
     background-color: #ffffff;
     width: 1920px;
     height: 120px;
@@ -48,6 +49,7 @@ a {
     font-size: 16px;
     font-weight: 400;
 }
+
 .btn {
     display: inline-block;
     border-radius: 6px;
@@ -57,11 +59,12 @@ a {
     color: #fff;
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;    
+    line-height: 22px;
 }
+
 .user .login {
     position: relative;
-    color: #404040; 
+    color: #404040;
     background-color: #f3f3f3;
     padding-left: 35px;
 }
@@ -75,9 +78,14 @@ a {
     height: 12px;
     background: transparent url('../img/login.png') no-repeat;
 }
+
 .user .download {
     position: relative;
     padding-left: 45px;
+}
+
+.user .download:hover {
+    background-color: #ff8a00;
 }
 
 .user .download::before {
@@ -88,4 +96,54 @@ a {
     width: 16px;
     height: 14px;
     background: transparent url('../img/download.png') no-repeat;
+}
+
+.header_menu,
+.header_submenu,
+.feedback {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.header_submenu {
+    display: none;
+    position: absolute;
+    top: 13px;
+
+
+}
+
+.header_bottom a {
+    color: #404040;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 41.89px;
+}
+
+.header_menu li,
+.header_submenu li,
+.feedback li {
+    color: #404040;
+    display: inline;
+
+}
+
+.header_menu_item {
+    margin-right: 30px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown a::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 100px;
+    width: 9px;
+    height: 6px;
+    background: url(../img/Polygon.svg)
 }
