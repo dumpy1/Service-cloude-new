@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <title>1С в облаке с компанией Scloud</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
 </head>
 
 <body>
     <header>
-        <div class="header_top">
-            <logo>
-                <img src="/img/Layer_2.png" alt="Scloud">
-            </logo>
+        <div class="header_top container">
+            <div class="logo">
+                <img src="img/Layer_2.png" alt="Scloud" width="89" height="56">
+            </div>
             <div class="user">
                 <b>8 800 555-91-15</b>
-                <a href="#">Личный кабинет</a>
-                <a href="#">Доступ в 1С</a>
+                <a class="btn login" href="#">Личный кабинет</a>
+                <a class="btn download" href="#">Доступ в 1С</a>
             </div>
         </div>
-        <div class="header_bottom">
+        <div class="header_bottom container">
             <nav class="header_nav">
                 <ul class="header_menu">
                     <li class="header_menu_item"><a href="#">Тарифы</a></li>
@@ -57,7 +59,7 @@
                 <li>Доступ к базе с телефона, планшета, компьютера</li>
             </ul>
             <a href="#" class="btn">Попробовать 14 дней бесплатно</a>
-            <video src="" class="nout"></video>
+            <video src="#" class="nout"></video>
         </div>
 
 
@@ -106,7 +108,7 @@
             <b class="title">Наши тарифы</b>
             <p class="">Взять 1С в аренду проще, надежнее и дешевле, чем купить. Цена облачной 1С по карману любой компании. </p>
 
-            <table border="1">
+            <table>
 
                 <tr>
                     <td>
@@ -279,7 +281,7 @@
             <div class="lenta">
                 <h3>Живая лента</h3>
                 <p>24 часа в сутки к нам обращаются пользователи. После выполнения заявки они могут оценить работу специалиста. Мы открыто публикуем все оценки здесь:</p>
-                <div lenta_slider>
+                <div class="lenta_slider">
                     <div class="lenta_item">
                         <span class="lenta_item_title"><b>Валентина,</b> 31.03.2018</span>
                         <p class="lenta_item_content">Спасибо, вы как всегда лучшие!</p>
