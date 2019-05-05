@@ -317,12 +317,13 @@ a {
 }
 
 .feature_item_center ul {
-    position: relative;
+
     padding-left: 60px;
     padding-right: 30px;
 }
 
 .feature_item_center li {
+    position: relative;
     font-family: 'PT Sans', sans-serif;
     font-size: 17px;
     line-height: 26px;
@@ -338,8 +339,8 @@ a {
     height: 8px;
     border-radius: 9px;
     background-color: #85c871;
-    top: 10px;
-    left: 36px;
+    top: 9px;
+    left: -16px;
 }
 
 .offer {
