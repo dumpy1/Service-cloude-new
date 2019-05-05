@@ -3,6 +3,7 @@ body {
     background-color: #f8f9f6;
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
@@ -12,13 +13,26 @@ header {
     background-color: #ffffff;
     width: 1920px;
     height: 120px;
+    -webkit-box-shadow: 0 0 21px rgba(150, 150, 150, 0.35);
     box-shadow: 0 0 21px rgba(150, 150, 150, 0.35);
 }
 
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+    -ms-flex-line-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     width: 1170px;
     margin: 0 auto;
 }
@@ -100,7 +114,8 @@ a {
 
 .header_menu,
 .header_submenu,
-.feedback {
+.feedback,
+.lead_list {
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -145,5 +160,89 @@ a {
     left: 100px;
     width: 9px;
     height: 6px;
-    background: url(../img/Polygon.svg)
+    background: url(../img/Polygon.svg);
 }
+
+.banner {
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    min-height: 611px;
+    background-image: url(../img/banner.jpg);
+
+}
+
+.banner_title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #404040;
+    margin-bottom: 38px;
+}
+
+
+
+.lead_list {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.lead_list li {
+    font-family: 'Myriad Pro', 'PTSans', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+
+    text-align: left;
+    color: #404040;
+    margin-left: 44px;
+}
+
+.lead_list li::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    background: url(../img/);
+
+}
+
+.lead_btn {
+    padding: 22px 114px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.7;
+    letter-spacing: 0.5px;
+    text-align: center;
+    border-radius: 31px;
+    -webkit-box-shadow: 0px 3px 13px 0 rgba(243, 112, 15, 0.47);
+    box-shadow: 0px 3px 13px 0 rgba(243, 112, 15, 0.47);
+}
+
+.lead {
+    margin-top: 68px;
+}
+
+.video {
+    width: 548px;
+    height: 312px;
+    margin-top: 74px;
+    background: transparent url(../img/nout.jpg) no-repeat;
+}
+
+
+
+.lead,
+.video {
+    border: 1px dashed black;
+}
+
