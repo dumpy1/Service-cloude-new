@@ -1,5 +1,5 @@
 body {
-    width: 1908px;
+    width: 1922px;
     background-color: #f8f9f6;
     margin: 0;
     padding: 0;
@@ -63,7 +63,6 @@ header {
 
 a {
     text-decoration: none;
-    color: #fff;
     font-size: 16px;
     font-weight: 400;
 }
@@ -627,4 +626,115 @@ input {
     border-radius: 31px;
     -webkit-box-shadow: 0px 3px 13px 0 rgba(243, 112, 15, 0.47);
     box-shadow: 0px 3px 13px 0 rgba(243, 112, 15, 0.47);
+}
+
+.family {
+    padding: 40px 375px;
+    background: #fff;
+    border-bottom: 2px solid #f2f3f5;
+}
+
+.family a {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: left;
+    color: #787b7f;
+}
+
+.family a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    min-height: 215px;
+    padding-top: 26px;
+    padding-bottom: 37px;
+    color: #737373;
+    background: #fff;
+    vertical-align: middle;
+}
+
+.address {
+    position: relative;
+    width: 272px;
+    margin-left: 198px;
+    margin-top: 26px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #737373;
+}
+
+.address b {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.address::before {
+    position: absolute;
+    content: "";
+    width: 122px;
+    height: 76px;
+    top: -23px;
+    left: -198px;
+    background: transparent url(../img/logo_wb.png) no-repeat;
+}
+
+.social {
+    margin-right: 390px;
+}
+
+.social_btn {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    border: 2px solid #c1c6cc;
+    margin-right: 12px;
+
+}
+
+.social_btn:hover {
+    -webkit-box-shadow: inset 1px 3px 2px 0px rgba(136, 136, 136, 1);
+    box-shadow: inset 1px 3px 2px 0px rgba(136, 136, 136, 1);
+}
+
+.social_btn_tw {
+    background: url(../img/tw.png) no-repeat center center;
+}
+
+.social_btn_vk {
+    background: url(../img/vk.png) no-repeat center center;
+}
+
+.social_btn_fb {
+    background: url(../img/fb.png) no-repeat center center;
+}
+
+.social_btn_ytb {
+    background: url(../img/ytb.png) no-repeat center center;
+}
+
+.apple_btn {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 0;
+    width: 157px;
+    height: 52px;
+    border-radius: 5px;
+    background: url(../img/Apple.png) no-repeat;
+}
+
+.footnote {
+    padding-top: 20px;
+    min-height: 76px;
+    background-color: #f7f8f9;
+    color: #c9caca;
+    text-align: left;
+    vertical-align: middle;
 }
