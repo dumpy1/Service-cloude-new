@@ -1,5 +1,5 @@
 body {
-    width: 1920px;
+    width: 1908px;
     background-color: #f8f9f6;
     margin: 0;
     padding: 0;
@@ -112,11 +112,7 @@ a {
     background: transparent url('../img/download.png') no-repeat;
 }
 
-.header_menu,
-.header_submenu,
-.feedback,
-.lead_list,
-.feature_item_center ul {
+ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -360,11 +356,10 @@ a {
 
 .offer_item {
     border-radius: 10px;
-    min-height: 298px;
+    min-height: 264px;
     background-color: #fff;
     padding-top: 61px;
     margin-bottom: 20px;
-
 }
 
 .offer_item b {
@@ -407,4 +402,157 @@ a {
     background-color: #fff;
     padding-right: 564px;
     padding-left: 78px;
+}
+
+.tariffs h2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.15;
+    text-align: center;
+    color: #404040;
+}
+
+.tariffs p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #404040;
+}
+
+.tariffs_item {
+    margin: 0;
+    padding: 0;
+    width: 532px;
+    height: 467px;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+    padding: 47px 42px 27px 50px;
+}
+
+.tariffs_item:hover {
+    -webkit-box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
+}
+
+.tariffs_item h3 {
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    line-height: 1.17;
+    font-weight: bold;
+    letter-spacing: 0.1;
+    color: #404040;
+    border-bottom: 4px solid #c1c1c1;
+
+}
+
+.tariffs_item h3 > span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: right;
+}
+
+.tariffs_item p {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: left;
+    color: #404040;
+    margin-left: 50px;
+}
+
+.tariffs_item p::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    left: -50px;
+    background: transparent url(../img/Forma_1_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F_11.png);
+}
+
+.tariffs_item b {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.59;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.tariffs_item ul > li {
+
+    font-size: 15px;
+    line-height: 2.4;
+    text-align: center;
+    color: #000000;
+}
+
+.tariffs_item ul > li:nth-child(odd) {
+    background-color: #f8f9f6;
+}
+
+.tariffs_option {
+    width: 1172px;
+    height: 83px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 22px;
+}
+
+.tariffs_option p {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.82;
+    text-align: center;
+    color: #404040;
+    margin-left: 124px;
+}
+
+.tariffs_option p::before {
+    position: absolute;
+    content: "";
+    width: 61px;
+    height: 61px;
+    border-radius: 61px;
+    background-color: #e9e9e9;
+    top: -11px;
+    left: -86px;
+    background: url(../img/%D0%A1%D0%BB%D0%BE%D0%B9_68.png);
+}
+
+.tariffs_option .btn {
+    padding: 16px 74px;
+    margin-right: 42px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25.5px;
+    -webkit-box-shadow: 0px 3px 4px 0 rgba(243, 112, 15, 0.63);
+    box-shadow: 0px 3px 4px 0 rgba(243, 112, 15, 0.63);
 }
