@@ -37,6 +37,10 @@ header {
     margin: 0 auto;
 }
 
+.header_top {
+    position: static;
+}
+
 .logo {
     margin-top: 11px;
 }
@@ -191,6 +195,7 @@ ul {
 }
 
 .lead_list li {
+    position: relative;
     font-family: 'PT Sans', sans-serif;
     font-size: 22px;
     font-weight: normal;
@@ -203,12 +208,14 @@ ul {
     margin-left: 44px;
 }
 
-.lead_list li::after {
+.lead_list li::before {
     content: "";
     position: absolute;
     width: 18px;
     height: 24px;
-    background: url(../img/);
+    top: 11px;
+    left: -40px;
+    background: transparent url(../img/green_check_small.png) no-repeat;
 
 }
 
@@ -229,10 +236,9 @@ ul {
 .lead {}
 
 .video {
-    width: 548px;
+    width: 555px;
     height: 312px;
-
-    background: transparent url(../img/nout.jpg) no-repeat;
+    background: transparent url(../img/video-tv.png) no-repeat;
 }
 
 .feature_header {
@@ -404,6 +410,10 @@ ul {
     padding-left: 78px;
 }
 
+.tariffs {
+    margin-bottom: 70px;
+}
+
 .tariffs h2 {
     font-family: 'PT Sans', sans-serif;
     font-size: 40px;
@@ -426,13 +436,11 @@ ul {
 }
 
 .tariffs_item {
-    margin: 0;
-    padding: 0;
-    width: 532px;
+    width: 478px;
     height: 467px;
     border-radius: 10px;
-
     background-color: #ffffff;
+    text-align: center;
     padding: 47px 42px 27px 50px;
 }
 
@@ -449,7 +457,6 @@ ul {
     font-weight: bold;
     letter-spacing: 0.1;
     color: #404040;
-    border-bottom: 4px solid #c1c1c1;
 
 }
 
@@ -458,6 +465,18 @@ ul {
     font-size: 20px;
     font-weight: 200;
     text-align: right;
+}
+
+.bar,
+.bar_gray {
+    display: block;
+    width: 478px;
+    height: 4px;
+    background-color: #85c871;
+}
+
+.bar_gray {
+    background-color: #c1c1c1;
 }
 
 .tariffs_item p {
@@ -484,12 +503,11 @@ ul {
     background: transparent url(../img/Forma_1_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F_11.png);
 }
 
-.tariffs_item b {
+.tariffs_item > b {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.59;
-    text-align: center;
-    margin: 10px 0 10px;
+    margin-bottom: 20px;
 }
 
 .wrapper {
@@ -506,9 +524,8 @@ ul {
 }
 
 .tariffs_item ul > li {
-
     font-size: 15px;
-    line-height: 2.4;
+    line-height: 1.4;
     text-align: center;
     color: #000000;
 }
@@ -553,6 +570,60 @@ ul {
     font-size: 20px;
     font-weight: bold;
     border-radius: 25.5px;
+    -webkit-box-shadow: 0px 3px 4px 0 rgba(243, 112, 15, 0.63);
+    box-shadow: 0px 3px 4px 0 rgba(243, 112, 15, 0.63);
+}
+
+.solutions {
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    text-align: center;
+
+}
+
+.solutions h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.form {
+padding-top: 1px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+form {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.form h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 0.83;
+    color: #404040;
+}
+
+input {
+    text-align: center;
+    width: 362px;
+    height: 51px;
+    border-radius: 10px;
+    border: solid 1px #d0d0d0;
+    background-color: #ffffff;
+}
+
+.form .btn {
+    padding: 22px 70px 22px 70px;
+    margin: 40px auto 54px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 31px;
     -webkit-box-shadow: 0px 3px 4px 0 rgba(243, 112, 15, 0.63);
     box-shadow: 0px 3px 4px 0 rgba(243, 112, 15, 0.63);
 }
