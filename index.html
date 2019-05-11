@@ -8,20 +8,28 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="header_top container">
-            <div class="logo">
-                <img src="img/Layer_2.png" alt="Scloud" width="89" height="56">
-            </div>
-            <div class="user">
-                <b>8 800 555-91-15</b>
-                <a class="btn login" href="#">Личный кабинет</a>
-                <a class="btn download" href="#">Доступ в 1С</a>
+        <div class="header_top">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/Layer_2.png" alt="Scloud" width="89" height="56">
+                </div>
+                <div class="user">
+                    <b>8 800 555-91-15</b>
+                    <a class="btn login" href="#">Личный кабинет</a>
+                    <a class="btn download" href="#">Доступ в 1С</a>
+                </div>
             </div>
         </div>
+
         <div class="header_bottom container">
             <nav class="header_nav">
                 <ul class="header_menu">
@@ -246,24 +254,20 @@
         </div>
 
         <div class="response">
-            <div class="response_slider">
-                <div class="response_slider_item">
-                    <img src="/img/portret.png" height="92" width="92" alt="фото">
-                    <span class="name">АЛЕКСЕЙ ЛОКОНЦЕВ</span>
-                    <span class="firm">TopGun</span>
-                    <a href="topgunbarbershop.ru" class="site">topgunbarbershop.ru</a>
+            <h2>Отзывы</h2>
+            <div class="container">
+
+                <div class="response_slider">
+
+                    <img src="img/portret.png" height="92" width="92" alt="фото">
+                    <div class="cridentials">
+                        <h3 class="name">АЛЕКСЕЙ ЛОКОНЦЕВ </h3>
+                        <span class="firm">TopGun</span>
+                        <a href="topgunbarbershop.ru" class="site">topgunbarbershop.ru</a>
+                    </div>
                     <div class="story">
-                        <p>Бухгалтерия моя сидит, скажем так, как наркоманы на вашем продукте,
-                            которая называется Scloud. Мы выбирали долго. Год мы тратили на выбор
-                            реально продукта. И сейчас мы пользуемся вами, и я хочу сказать, что это
-                            идеальный продукт, потому что моя бухгалтерия меня не спрашивает
-                            ни о чем. У них нет никаких проблем, понимаете, с программным
-                            обеспечением. И быстро приходит отчетность, никаких сбоев с облаком
-                            не бывает. </p>
-                        <p>Поэтому я хочу сказать, что вы молодцы! Хорошо, что вы есть! Хорошо,
-                            что вы помогаете моему бизнесу расти с облачными технологиями.
-                            И это прикольно, потому что я сам всегда за все передовые технологии.
-                            И я хочу сказать вам огромное спасибо.</p>
+                        <p>Бухгалтерия моя сидит, скажем так, как наркоманы на вашем продукте, которая называется Scloud.Мы выбирали долго.Год мы тратили на выбор реально продукта.И сейчас мы пользуемся вами, и я хочу сказать, что это идеальный продукт, потому что моя бухгалтерия меня не спрашивает ни о чем.У них нет никаких проблем, понимаете, с программным обеспечением.И быстро приходит отчетность, никаких сбоев с облаком не бывает. </p>
+                        <p>Поэтому я хочу сказать, что вы молодцы!Хорошо, что вы есть!Хорошо, что вы помогаете моему бизнесу расти с облачными технологиями.И это прикольно, потому что я сам всегда за все передовые технологии.И я хочу сказать вам огромное спасибо.</p>
                     </div>
 
                     <div class="response_slider_nav">
@@ -274,31 +278,26 @@
                             <label for="btn_2">2</label>
                             <label for="btn_3">3</label>
                             <label for="btn_4">4</label>
-                            <label for="btn_5">5</label>
-                            <label for="btn_6">6</label>
-                            <label for="btn_7">7</label>
-                            <label for="btn_8">8</label>
-                            <label for="btn_9">9</label>
-                            <label for="btn_10">10</label>
                         </div>
                         <div class="counter">
-                            <span>1</span><span>/10</span>
+                            <span>1</span><span>/4</span>
                         </div>
                     </div>
                 </div>
 
-            </div>
-            <div class="lenta">
-                <h3>Живая лента</h3>
-                <p>24 часа в сутки к нам обращаются пользователи. После выполнения заявки они могут оценить работу специалиста. Мы открыто публикуем все оценки здесь:</p>
-                <div class="lenta_slider">
-                    <div class="lenta_item">
-                        <span class="lenta_item_title"><b>Валентина,</b> 31.03.2018</span>
-                        <p class="lenta_item_content">Спасибо, вы как всегда лучшие!</p>
-                    </div>
-                    <div class="lenta_item">
-                        <span class="lenta_item_title"><b>Марина,</b> 31.03.2018</span>
-                        <p class="lenta_item_content">Спасибо за помощь, все очень доступно и понятно, и быстро решаются все вопросы</p>
+
+                <div class="lenta">
+                    <h3>Живая лента</h3>
+                    <p>24 часа в сутки к нам обращаются пользователи. После выполнения заявки они могут оценить работу специалиста. Мы открыто публикуем все оценки здесь:</p>
+                    <div class="lenta_slider">
+                        <div class="lenta_item">
+                            <span class="lenta_item_title"><b>Валентина,</b> 31.03.2018</span>
+                            <p class="lenta_item_content">Спасибо, вы как всегда лучшие!</p>
+                        </div>
+                        <div class="lenta_item">
+                            <span class="lenta_item_title"><b>Марина,</b> 31.03.2018</span>
+                            <p class="lenta_item_content">Спасибо за помощь, все очень доступно и понятно, и быстро решаются все вопросы</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -365,6 +364,12 @@
 
 
     </footer>
+    <script>
+        $('.single-slide').slick({
+
+        });
+
+    </script>
 </body>
 
 </html>

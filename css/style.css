@@ -12,7 +12,6 @@ header {
     color: #404040;
     background-color: #ffffff;
     width: 1920px;
-    height: 100px;
     -webkit-box-shadow: 0 0 21px rgba(150, 150, 150, 0.35);
     box-shadow: 0 0 21px rgba(150, 150, 150, 0.35);
 }
@@ -166,6 +165,7 @@ ul {
 .banner {
     margin: 0;
     padding: 0;
+    padding-top: 200px;
     padding-top: 45px;
     width: 1920px;
     height: 600px;
@@ -768,6 +768,88 @@ input {
     border-radius: 31px;
     -webkit-box-shadow: 0px 3px 13px 0 rgba(243, 112, 15, 0.47);
     box-shadow: 0px 3px 13px 0 rgba(243, 112, 15, 0.47);
+}
+
+.response {
+    text-align: center;
+}
+
+.response h2 {
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.response_slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    width: 477px;
+    padding: 16px 40px 26px 41px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#f6f6f6)), -webkit-gradient(linear, left bottom, left top, from(#d7d7d7), to(#ffffff));
+    background-image: linear-gradient(to bottom, #f6f6f6, #f6f6f6), linear-gradient(to top, #d7d7d7, #ffffff);
+}
+
+.response_slider::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 30px;
+    top: 35px;
+    right: 45px;
+    background:transparent  url('../img/blockquote.png') no-repeat;
+}
+
+.response_slider p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.response_slider img {
+    display: block;
+    margin: 0;
+
+}
+
+.cridentials {
+    display: block;
+    width: 253px;
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.cridentials h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #404040;
+}
+
+.cridentials span {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.cridentials a {
+    font-size: 20px;
+    line-height: 30px;
+    color: #404040;
+    text-decoration: underline;
+}
+
+.lenta {
+    width: 545px;
 }
 
 .family {
