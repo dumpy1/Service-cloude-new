@@ -34,6 +34,7 @@ header {
     -ms-flex-align: center;
     width: 1170px;
     margin: 0 auto;
+    border: 1px dashed black;
 }
 
 .header_top {
@@ -45,8 +46,8 @@ header {
 }
 
 .user {
-    margin-top: 22px;
-    margin-right: 15px;
+    padding-top: 22px;
+
 }
 
 .user b {
@@ -76,6 +77,10 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.btn:hover {
+    background-color: #ff8a00;
 }
 
 .user .login {
@@ -124,8 +129,11 @@ ul {
     display: none;
     position: absolute;
     top: 13px;
+    background-color: #faf6f1;
+}
 
-
+.header_submenu:hover {
+    display: inline-block;
 }
 
 .header_bottom a {
@@ -140,13 +148,135 @@ ul {
 .header_submenu li,
 .feedback li {
     color: #404040;
-    display: inline;
+    display: inline-block;
 
 }
 
 .header_menu_item {
     margin-right: 30px;
 }
+
+.feedback_menu_item {}
+
+.petition {
+    position: relative;
+    margin-right: 55px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.petition::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 14px;
+    top: 13px;
+    left: -28px;
+    background: transparent url('../img/petition.png') no-repeat;
+}
+
+.support {
+    position: relative;
+    margin-right: 17px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.support a:hover {
+    color: #ff7800;
+}
+
+.support::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    top: 13px;
+    left: -23px;
+    background: transparent url('../img/support.png') no-repeat;
+}
+
+.find {
+    position: relative;
+    margin-right: 9px;
+    width: 32px;
+    height: 27px;
+    border-radius: 6px;
+    background-color: #f3f3f3;
+}
+
+.find a {
+    font-size: 0;
+}
+
+.find::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 6px;
+    right: 8px;
+    background: transparent url('../img/find.png') no-repeat;
+
+}
+
+.find:hover {
+    width: 143px;
+    z-index: 100;
+}
+
+.find a:hover {
+    font-size: 15px;
+    color: #404040;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+
+.language {
+    position: relative;
+    width: 49px;
+    height: 27px;
+    border-radius: 6px;
+    background-color: #f3f3f3;
+}
+
+
+.language a {
+    font-size: 0;
+}
+
+.language::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    top: 12px;
+    right: 7px;
+    background: transparent url('../img/Polygon.svg') no-repeat;
+}
+
+.language_dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+.language_dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+
+
 
 .dropdown {
     position: relative;
@@ -155,7 +285,7 @@ ul {
 .dropdown a::after {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 19px;
     left: 100px;
     width: 9px;
     height: 6px;
@@ -168,8 +298,9 @@ ul {
     padding-top: 200px;
     padding-top: 45px;
     width: 1920px;
-    height: 600px;
-    background-image: url('../img/banner.jpg');
+    height: 546px;
+    background: url('../img/banner_back.png') no-repeat;
+
 
 }
 
@@ -214,7 +345,7 @@ ul {
     height: 24px;
     top: 11px;
     left: -40px;
-    background: transparent url('../img/green_check_small.png') no-repeat;
+    background: transparent url('../img/orange_check.png') no-repeat;
 
 }
 
@@ -449,6 +580,8 @@ ul {
 }
 
 .tariffs_item h3 {
+    display: inline-block;
+    border-bottom: 4px solid #85c871;
     text-align: left;
     font-family: 'PT Sans', sans-serif;
     font-size: 30px;
@@ -492,15 +625,37 @@ ul {
     margin-left: 50px;
 }
 
+
 .tariffs_item p::before {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     top: 5px;
     left: -50px;
-    background: transparent url('../img/Forma_1_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F_11.png');
 }
+
+.left_one::before {
+    background: transparent url('../img/left_one.png') no-repeat;
+}
+
+.left_two::before {
+
+    background: transparent url('../img/left_two.png') no-repeat;
+}
+
+.right_one::before {
+
+    background: transparent url('../img/right_one.png') no-repeat;
+}
+
+.right_two::before {
+
+    background: transparent url('../img/right_two.png') no-repeat;
+}
+
+
+
 
 .tariffs_item > b {
     font-size: 22px;
@@ -806,7 +961,7 @@ input {
     height: 30px;
     top: 35px;
     right: 45px;
-    background:transparent  url('../img/blockquote.png') no-repeat;
+    background: transparent url('../img/blockquote.png') no-repeat;
 }
 
 .response_slider p {
@@ -852,6 +1007,46 @@ input {
     width: 545px;
 }
 
+.lenta h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.lenta p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+.lenta_slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lenta_item {
+    width: 247px;
+    height: 110px;
+    box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.17);
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding-top: 23px;
+    padding-left: 19px;
+    padding-bottom: 13px;
+}
+
+.lenta_item_title {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.lenta_item p {
+    text-align: left;
+    margin: 0;
+}
+
 .family {
     padding: 40px 375px;
     background: #fff;
@@ -871,7 +1066,7 @@ input {
 }
 
 footer {
-    min-height: 215px;
+
     padding-top: 26px;
     padding-bottom: 37px;
     color: #737373;
@@ -955,8 +1150,9 @@ footer {
 }
 
 .footnote {
+    margin-top: 37px;
     padding-top: 20px;
-    min-height: 76px;
+    padding-bottom: 30px;
     background-color: #f7f8f9;
     color: #c9caca;
     text-align: left;

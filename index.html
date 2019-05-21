@@ -30,32 +30,39 @@
             </div>
         </div>
 
-        <div class="header_bottom container">
-            <nav class="header_nav">
-                <ul class="header_menu">
-                    <li class="header_menu_item"><a href="#">Тарифы</a></li>
-                    <li class="header_menu_item"><a href="#">Партнерам</a></li>
-                    <li class="header_menu_item dropdown"><a href="#">База знаний</a>
-                        <ul class="header_submenu">
-                            <li><a href="#">Инструкции</a></li>
-                            <li><a href="#">Самоучитель 1С</a></li>
-                            <li><a href="#">Финансовый блог</a></li>
-                            <li><a href="#">Полезные инструменты</a></li>
-                        </ul>
-
-                    </li>
-                    <li class="header_menu_item"><a href="#">О нас</a></li>
-                    <li class="header_menu_item"><a href="#">Отзывы</a></li>
-                </ul>
-            </nav>
-            <div class="feedback">
-                <ul>
-                    <li><a href="#"></a>Написать директору</li>
-                    <li><a href="#"></a>Техподдержка</li>
-                    <li><a href="#"></a>Поиск</li>
-                    <li><a href="#"></a>Язык</li>
-                </ul>
+        <div class="header_bottom ">
+            <div class="container">
+                <nav class="header_nav">
+                    <ul class="header_menu">
+                        <li class="header_menu_item"><a href="#">Тарифы</a></li>
+                        <li class="header_menu_item"><a href="#">Партнерам</a></li>
+                        <li class="header_menu_item dropdown"><a href="#">База знаний</a>
+                            <ul class="header_submenu">
+                                <li><a href="#">Инструкции</a></li>
+                                <li><a href="#">Самоучитель 1С</a></li>
+                                <li><a href="#">Финансовый блог</a></li>
+                                <li><a href="#">Полезные инструменты</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_menu_item"><a href="#">О нас</a></li>
+                        <li class="header_menu_item"><a href="#">Отзывы</a></li>
+                    </ul>
+                </nav>
+                <div class="feedback">
+                    <ul>
+                        <li class="feedback_menu_item petition"><a href="#">Написать директору</a></li>
+                        <li class="feedback_menu_item support"><a href="#">Техподдержка</a></li>
+                        <li class="feedback_menu_item find"><a href="#">Поиск</a></li>
+                        <li class="feedback_menu_item language"><a href="#">Язык</a>
+                            <ul class="language_dropdown">
+                                <li><a href="">RU</a></li>
+                                <li><a href="">EN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
     </header>
     <main>
@@ -130,9 +137,10 @@
                 <div class="tariffs_item">
 
                     <h3>Тариф «Оптимальный» <span>от</span> 1020 <span>&#8381;/мес</span></h3>
-                    <p>Можно изменять и дорабатывать</p>
-                    <p>Доступ к 1С через удаленный рабочий стол, браузер или тонкий клиент</p>
-                    <div class="bar"></div>
+
+                    <p class="left_one">Можно изменять и дорабатывать</p>
+                    <p class="left_two">Доступ к 1С через удаленный рабочий стол, браузер или тонкий клиент</p>
+
                     <b>Конфигурации</b>
                     <div class="wrapper">
                         <ul class="left_list">
@@ -154,9 +162,10 @@
                 <div class="tariffs_item">
 
                     <h3>Тариф «Веб» 700 <span>&#8381;/мес</span></h3>
-                    <p>Нельзя изменять и дорабатывать</p>
-                    <p>Доступ к 1С только через браузер или тонкий клиент</p>
-                    <div class="bar_gray"></div>
+
+                    <p class="right_one">Нельзя изменять и дорабатывать</p>
+                    <p class="right_two">Доступ к 1С только через браузер или тонкий клиент</p>
+
 
                     <b>Конфигурации</b>
                     <ul>
@@ -368,8 +377,5 @@
         $('.single-slide').slick({
 
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
