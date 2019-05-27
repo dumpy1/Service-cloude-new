@@ -937,6 +937,18 @@ input {
 
 .response {
   text-align: center;
+  position: relative;
+}
+
+.response::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -200;
+  top: 126px;
+  width: 1970px;
+  height: 315px;
+  background-color: #ffffff;
 }
 
 .response h2 {
@@ -1066,7 +1078,7 @@ input {
 .family a {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: left;
   color: #787b7f;
 }
@@ -1076,9 +1088,7 @@ input {
 }
 
 footer {
-
   padding-top: 26px;
-  padding-bottom: 37px;
   color: #737373;
   background: #fff;
   vertical-align: middle;
