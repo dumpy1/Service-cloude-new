@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="header_bottom ">
+        <div class="header_bottom">
             <div class="container">
                 <nav class="header_nav">
                     <ul class="header_menu">
@@ -53,11 +53,17 @@
                         <li class="feedback_menu_item petition"><a href="#">Написать директору</a></li>
                         <li class="feedback_menu_item support"><a href="#">Техподдержка</a></li>
                         <li class="feedback_menu_item find"><a href="#">Поиск</a></li>
-                        <li class="feedback_menu_item language"><a href="#">Язык</a>
-                            <ul class="language_dropdown">
-                                <li><a href="">RU</a></li>
-                                <li><a href="">EN</a></li>
-                            </ul>
+                        <li class="feedback_menu_item language">
+                            <div class="select_styled">
+                                <select>
+                                    <option value="RU">Ru</option>
+                                    <option value="EN">En</option>
+                                </select>
+                            </div>
+
+
+
+
                         </li>
                     </ul>
                 </div>
@@ -78,8 +84,7 @@
                     <a href="#" class="btn lead_btn">Попробовать 14 дней бесплатно</a>
                 </div>
                 <div class="video">
-                    <button class="player">
-                    </button>
+                    <button class="player"></button>
                 </div>
 
             </div>
@@ -135,47 +140,53 @@
             <p class="">Взять 1С в аренду проще, надежнее и дешевле, чем купить. Цена облачной 1С по карману любой компании. </p>
             <div class="container">
                 <div class="tariffs_item">
-
-                    <h3>Тариф «Оптимальный» <span>от</span> 1020 <span>&#8381;/мес</span></h3>
-
-                    <p class="left_one">Можно изменять и дорабатывать</p>
-                    <p class="left_two">Доступ к 1С через удаленный рабочий стол, браузер или тонкий клиент</p>
-
-                    <b>Конфигурации</b>
-                    <div class="wrapper">
-                        <ul class="left_list">
-                            <li>1С: Бухгалтерия ПРОФ/КОРП</li>
-                            <li>1С: Управление торговлей</li>
-                            <li>1С: Управление нашей фирмой</li>
-                            <li>1С: Зарплата и управление персоналом</li>
-                        </ul>
-                        <ul class="rigt_list">
-                            <li>1С: Комплексная автоматизация</li>
-                            <li>1С: Розница</li>
-                            <li>1С: Документооборот ПРОФ</li>
-                            <li>1С: Управление сервисным центром</li>
-                        </ul>
+                    <div class="tariffs_item_top">
+                        <h3 class="tariffs_item_title">Тариф «Оптимальный»</h3> <span>от <b>1020</b> &#8381;/мес</span>
                     </div>
-
+                    <div class="tariffs_item_middle">
+                        <p class="left_one">Можно изменять и дорабатывать</p>
+                        <p class="left_two">Доступ к 1С через удаленный рабочий стол, браузер или тонкий клиент</p>
+                    </div>
+                    <div class="tariffs_item_bottom">
+                        <b>Конфигурации</b>
+                        <div class="wrapper">
+                            <ul class="left_list">
+                                <li>1С: Бухгалтерия ПРОФ/КОРП</li>
+                                <li>1С: Управление торговлей</li>
+                                <li>1С: Управление нашей фирмой</li>
+                                <li>1С: Зарплата и управление персоналом</li>
+                            </ul>
+                            <ul class="rigt_list">
+                                <li>1С: Комплексная автоматизация</li>
+                                <li>1С: Розница</li>
+                                <li>1С: Документооборот ПРОФ</li>
+                                <li>1С: Управление сервисным центром</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tariffs_item">
 
-                    <h3>Тариф «Веб» 700 <span>&#8381;/мес</span></h3>
+                    <div class="tariffs_item_top gray">
+                        <h3 class="tariffs_item_title">Тариф «Веб»</h3> <span><b>700</b> &#8381;/мес</span>
+                    </div>
+                    <div class="tariffs_item_middle">
+                        <p class="right_one">Нельзя изменять и дорабатывать</p>
+                        <p class="right_two">Доступ к 1С только через браузер или тонкий клиент</p>
+                    </div>
+                    <div class="tariffs_item_bottom">
+                        <b>Конфигурации</b>
+                        <div class="single_list">
+                            <ul>
+                                <li>1С: Бухгалтерия ПРОФ/КОРП</li>
+                                <li>1С: Управление торговлей</li>
+                                <li>1С: Управление нашей фирмой</li>
+                                <li>1С: Зарплата и управление персоналом</li>
+                            </ul>
+                        </div>
 
-                    <p class="right_one">Нельзя изменять и дорабатывать</p>
-                    <p class="right_two">Доступ к 1С только через браузер или тонкий клиент</p>
-
-
-                    <b>Конфигурации</b>
-                    <ul>
-                        <li>1С: Бухгалтерия ПРОФ/КОРП</li>
-                        <li>1С: Управление торговлей</li>
-                        <li>1С: Управление нашей фирмой</li>
-                        <li>1С: Зарплата и управление персоналом</li>
-                    </ul>
-
-
+                    </div>
                 </div>
             </div>
 
@@ -283,13 +294,20 @@
 
 
                         <div class="response_slider_dotes">
-                            <label for="btn_1">1</label>
-                            <label for="btn_2">2</label>
-                            <label for="btn_3">3</label>
-                            <label for="btn_4">4</label>
+                            <span class="response_slider_dot selected">1</span>
+                            <span class="response_slider_dot ">2</span>
+                            <span class="response_slider_dot ">3</span>
+                            <span class="response_slider_dot ">4</span>
+                            <span class="response_slider_dot ">5</span>
+                            <span class="response_slider_dot ">6</span>
+                            <span class="response_slider_dot ">7</span>
+                            <span class="response_slider_dot ">8</span>
+                            <span class="response_slider_dot ">9</span>
+                            <span class="response_slider_dot ">10</span>
                         </div>
                         <div class="counter">
-                            <span>1</span><span>/4</span>
+                            отзыв
+                            <span>1</span><span>/10</span>
                         </div>
                     </div>
                 </div>
