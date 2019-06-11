@@ -61,8 +61,9 @@ header {
 
 a {
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
 }
 
 .btn {
@@ -288,11 +289,34 @@ select {
 .header_submenu a {
     font-size: 16px;
     font-weight: 400;
-    line-height: 41.89px;
+    line-height: 42px;
 }
 
 .dropdown:hover .header_submenu {
     display: block;
+}
+
+/*header scrolled*/
+.header_scrolled .logo {
+    margin: 13px 0px 17px 0;
+}
+
+.header_scrolled .header_nav {
+    padding: 0;
+    margin: 0;
+}
+
+.header_scrolled .header_nav {
+    color: #404040;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 41.89px;
+}
+
+
+.header_scrolled .user {
+    margin: 12px 0;
+    padding: 0;
 }
 
 .banner {
@@ -971,7 +995,7 @@ input {
     position: relative;
 }
 
-.response::after {
+/*.response::after {
     content: "";
     display: block;
     position: absolute;
@@ -980,7 +1004,7 @@ input {
     width: 1970px;
     height: 315px;
     background-color: #ffffff;
-}
+}*/
 
 .response h2 {
     font-size: 36px;
@@ -988,23 +1012,16 @@ input {
 }
 
 .response_slider {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     position: relative;
     width: 477px;
-    padding: 16px 40px 26px 41px;
+    padding: 16px 40px 86px 41px;
     border-radius: 10px;
     -webkit-box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
     box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
     background-image: linear-gradient(to top, rgba(215, 215, 215, 0.26) 0%, rgba(255, 255, 255, 0.26) 100%);
 }
+
+
 
 .response_slider::before {
     position: absolute;
@@ -1016,20 +1033,31 @@ input {
     background: transparent url('../img/blockquote.png') no-repeat;
 }
 
-.response_slider p {
+
+.slider_item_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.story {
+    display: block;
     text-align: left;
     font-size: 15px;
     line-height: 20px;
 }
 
 .response_slider img {
+    width: 92px;
+    height: 92px;
     display: block;
     margin: 0;
+    padding: 0;
 
 }
 
 .response_slider_nav {
-    display: flex;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
@@ -1066,7 +1094,7 @@ input {
 }
 
 .cridentials {
-    display: block;
+    display: inline-block;
     width: 253px;
     margin-top: 20px;
     margin-left: 15px;
@@ -1107,8 +1135,40 @@ input {
     text-decoration: underline;
 }
 
+/*точки от слайдера*/
+.slick-dots {
+    display: inline-block;
+    position: absolute;
+
+}
+
+.response_slider .slick-dots li {
+    display: inline-block;
+
+}
+
+.slick-dots li button {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: 0;
+    padding: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid #6a6a6a;
+    margin-right: 6px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #6a6a6a;
+}
+
+
 .lenta {
-    width: 545px;
+    width: 500px;
+    margin-right: 42px;
+    position: relative;
 }
 
 .lenta h3 {
@@ -1126,20 +1186,20 @@ input {
 }
 
 .lenta_slider {
+
     display: flex;
     justify-content: space-between;
+
 }
 
 .lenta_item {
-    width: 244px;
-    height: 100px;
     box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.17);
     border-radius: 4px;
     background-color: #ffffff;
-    padding-top: 23px;
-    padding-left: 19px;
-    padding-bottom: 13px;
+    padding: 13px 19px;
+    margin: 9px;
     text-align: left;
+
 }
 
 .lenta_item_title {
@@ -1150,20 +1210,58 @@ input {
     line-height: 30px;
 }
 
-.lenta_item p {
+.lenta_slider .lenta_item_content {
     display: inline-block;
     text-align: left;
     margin: 0;
     font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 18px;
 }
+
+.lenta .slick-track {
+    height: 107px;
+}
+
+.prev,
+.next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 75%;
+    display: block;
+    width: 9px;
+    height: 14px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent url('../img/slider-arrow.png') no-repeat;
+}
+
+.next {
+    right: -14px;
+    transform-origin: 50% 50% 0;
+    transform: rotate(180deg);
+}
+
+.prev {
+    left: -14px;
+}
+
+
 
 .family {
     padding: 40px 375px;
     background: #fff;
     border-bottom: 2px solid #f2f3f5;
 }
+
+
 
 .family a {
     font-size: 14px;
